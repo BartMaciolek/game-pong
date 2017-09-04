@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<html lang="pl-PL">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>PONG | Game</title>
+	<meta name="description" content="Play a good old PONG game in your desktop browser! This is my JavaScript clone. PONG was originally developed by the Japanese company Taito Corporation and released by Atari company in 1972." />
+	<meta name="keywords" content="game, old, classic, arcade, pong, ping-pong, table, tennis" />
+	<meta name="author" content="Bartosz Maciołek">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/own.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&amp;subset=latin-ext" rel="stylesheet"> 
+</head>
+
+<body>
+	<header class="page-header">
+		<div class="wrapper">
+			<h1>PONG</h1>
+			<h2>classic arcade game</h2><br>
+			<button class="button button-game-start" id="buttonGameStart" name="buttonGameStart">start new game</button>
+			<button class="button button-game-settings" id="buttonGameSettings" name="buttonGameSettings">display settings</button>
+		</div>
+	</header>
+	<main>
+		<section class="game-settings" id="sectionGameSettings">
+			<div class="wrapper wrapper-flex">
+				<div class="game-settings-group">
+					<header>
+						<p>Game speed</p>
+					</header>
+					<ul>
+						<li>
+							<input type="radio" id="gameSpeedSelectorFirstOption" name="gameSpeedSelector" value="1" checked="checked">
+							<label for="gameSpeedSelectorFirstOption">Slow</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="gameSpeedSelectorSecondOption" name="gameSpeedSelector" value="2">
+							<label for="gameSpeedSelectorSecondOption">Medium</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="gameSpeedSelectorThirdOption" name="gameSpeedSelector" value="3">
+							<label for="gameSpeedSelectorThirdOption">Fast</label>
+							<div class="check"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="game-settings-group">
+					<header>
+						<p>Difficulty level</p>
+					</header>
+					<ul>
+						<li>
+							<input type="radio" id="gameDifficultySelectorFirstOption" name="gameDifficultySelector" value="1" checked="checked">
+							<label for="gameDifficultySelectorFirstOption">Easy</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="gameDifficultySelectorSecondOption" name="gameDifficultySelector" value="2">
+							<label for="gameDifficultySelectorSecondOption">Medium</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="gameDifficultySelectorThirdOption" name="gameDifficultySelector" value="3">
+							<label for="gameDifficultySelectorThirdOption">Hard</label>
+							<div class="check"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="game-settings-group">
+					<header>
+						<p>Winning Score</p>
+					</header>
+					<ul>
+						<li>
+							<input type="radio" id="gameLengthSelectorFirstOption" name="gameLengthSelector" value="9" checked="checked">
+							<label for="gameLengthSelectorFirstOption">9 points</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="gameLengthSelectorSecondOption" name="gameLengthSelector" value="15">
+							<label for="gameLengthSelectorSecondOption">15 points</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="gameLengthSelectorThirdOption" name="gameLengthSelector" value="21">
+							<label for="gameLengthSelectorThirdOption">21 points</label>
+							<div class="check"></div>
+						</li>
+					</ul>
+				</div>			
+			</div>
+		</section>
+		<section class="game-area">
+			<div class="wrapper">
+				<div class="game-score">
+					<p class="game-score-left">09</p>
+					<p class="game-score-right">10</p>
+				</div>
+				<div class="game-board">
+					<canvas id="gamePong"></canvas>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<div class="wrapper">
+			<p>2017 JavaScript clone by Bartosz Maciołek</p>
+		</div>
+	</footer>
+
+	<script src="js/pong.js"></script>
+</body>
+
+</html>
