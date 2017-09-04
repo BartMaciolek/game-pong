@@ -1,2 +1,2 @@
-# Simple Calculator
+# PONG classic game
 Here is my JavaScript clone of a good old PONG. This game was originally developed by the Japanese company Taito Corporation and released by Atari company in 1972. Now you can play it in your favorite desktop browser.
